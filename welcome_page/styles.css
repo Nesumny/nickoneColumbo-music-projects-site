@@ -43,6 +43,11 @@ h1 {
     border: 10px;
 }
 
+.flex-item:active {
+    background-color: rgba(2, 255, 213, 0.493);
+    transition: 50ms;
+}
+
 .item-logo-img {
     padding-top: 2rem;
     height: 60%;
