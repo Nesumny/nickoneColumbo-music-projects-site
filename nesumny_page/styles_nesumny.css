@@ -1,19 +1,16 @@
 html, body {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     color: #ccc;
 }
 
-h1, p {
+h1, h2, p {
     margin: 0;
     text-align: center;
     font-family: "roboto", sans-serif;
     font-weight: 100;
 }
 
-p {
-    font-size: smaller;
-}
 header {
     height: 5rem;
     line-height: 5rem;
@@ -24,33 +21,72 @@ header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    gap: 2rem;
 }
 
 .flex-item {
     margin: 1rem;
     width: 90%;
     text-align: justify;
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+.item-text {
+    margin-top: 0;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.head-text {
+    text-align: justify;
+    font-size: large;
+}
+
 .iframe-s {
     height: 150px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 .iframe-y {
     width: 90%;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
-@media all and (max-width:500px) {
+
+.releases {
+    aspect-ratio: 1/1;
+    max-width: 800px;
+    border-radius: 1rem;
+    list-style: none;
+    padding: 0;
+    line-height: 20rem;
+    background-image: url("https://i.ibb.co/YQdJCVx/3000x3000-1813644-9-FB09200-E66-F-495-F-A047980-F74-A1-D808-0-12975066-Comp200000copy.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+
+@media all and (max-width:480px) {
+    
     .iframe-s, .iframe-y {
         margin: 0;
         width: 100%;
         height: 150px   
     }
+
+    .head-text {
+        font-size: medium;
+    }
+
 }
 
 @media all and (min-width:900px) {
+    
     .iframe-s {
         width: 800px;   
     }
@@ -59,8 +95,5 @@ header {
         width: 800px;
     }
 
-    .head-text {
-        width: 800px;
-    }
 }
 
