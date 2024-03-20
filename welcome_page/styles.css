@@ -38,8 +38,8 @@ h1 {
 .flex-item:hover {
     background-color: rgba(209, 209, 209, 0.377);
     cursor: pointer;
-    width:11rem;
-    height: 11rem;
+    width:10.5rem;
+    height: 10.5rem;
     border: 10px;
 }
 
