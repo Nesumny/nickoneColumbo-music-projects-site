@@ -61,15 +61,23 @@ header {
     border-radius: 1rem;
     list-style: none;
     padding: 0;
-    line-height: 20rem;
     background-image: url("https://i.ibb.co/YQdJCVx/3000x3000-1813644-9-FB09200-E66-F-495-F-A047980-F74-A1-D808-0-12975066-Comp200000copy.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     user-select: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
+.iframe-b {
+    height: 120px;
+    border: 1px grey solid;
+    border-radius: 1rem;
+}
 
 @media all and (max-width:480px) {
     
